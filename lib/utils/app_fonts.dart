@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppFonts {
   AppFonts._();
-  static TextStyle styleRegular16(context) {
+  static TextStyle styleRegular16(BuildContext context) {
     return TextStyle(
       color: const Color(0xFF064061),
       fontSize: getResponsiveFontSize(context, fontSize: 16),

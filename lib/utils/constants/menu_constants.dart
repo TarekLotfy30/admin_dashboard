@@ -1,14 +1,22 @@
-import 'package:flutter/material.dart';
+import '../../model/menu_item.dart';
+import '../app_images.dart';
 
-import '../../models/menu_item.dart';
+class MenuConstant {
+  MenuConstant._();
+  static final List<MenuItem> bottomMenuItems = [
+    MenuItem(
+      title: 'Settings system',
+      iconAsset: Assets.imagesSettings,
+      onTap: () {},
+    ),
+    MenuItem(
+      title: 'Logout',
+      iconAsset: Assets.imagesLogout,
+      onTap: () {},
+    ),
+  ];
 
-import '../../utils/app_images.dart';
-import 'custom_list_tile.dart';
-
-class BuildNavigationItem extends StatelessWidget {
-  BuildNavigationItem({super.key});
-
-  final menuItems = [
+  static final List<MenuItem> mainMenuItems = [
     MenuItem(
       title: 'Dashboard',
       iconAsset: Assets.imagesDashboard,
@@ -35,15 +43,4 @@ class BuildNavigationItem extends StatelessWidget {
       onTap: () {},
     ),
   ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-      child: Column(
-        spacing: 20,
-        children: menuItems.map((item) => CustomListTile(item: item)).toList(),
-      ),
-    );
-  }
 }

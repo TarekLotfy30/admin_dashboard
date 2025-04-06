@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../models/menu_item.dart';
-import '../../utils/app_fonts.dart';
-import '../../utils/app_colors.dart';
+import '../../../model/menu_item.dart';
+import '../../../utils/app_colors.dart';
+import '../../../utils/app_fonts.dart';
 
 class CustomListTile extends StatefulWidget {
   const CustomListTile({super.key, required this.item});
@@ -30,12 +30,12 @@ class _CustomListTileState extends State<CustomListTile> {
             color: isHovered ? AppColors.primary : null,
             fontWeight: isHovered ? FontWeight.w700 : null,
           ),
+          softWrap: true,
         ),
         leading: SvgPicture.asset(widget.item.iconAsset),
         onTap: widget.item.onTap,
         trailing: Container(
           width: 3.5,
-          height: double.infinity,
           decoration: BoxDecoration(
             color: isHovered ? AppColors.primary : null,
             shape: BoxShape.rectangle,

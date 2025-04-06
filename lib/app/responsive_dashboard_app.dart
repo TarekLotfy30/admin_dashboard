@@ -1,6 +1,7 @@
-import 'package:admin_dashboard/views/dashboard_view.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+
+import '../view/widgets/dashboard_view.dart';
 
 class ResponsiveDashboardApp extends StatelessWidget {
   const ResponsiveDashboardApp({super.key});
