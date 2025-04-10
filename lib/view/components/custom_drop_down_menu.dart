@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../model/drop_meun_item.dart';
+import '../../model/drop_menu_item.dart';
 import '../../utils/app_colors.dart';
 import '../../utils/app_fonts.dart';
 import '../../utils/app_images.dart';
@@ -14,9 +14,9 @@ class CustomDropDownMenu extends StatelessWidget {
     required this.items,
   });
 
-  final DropMeunItem value;
-  final void Function(DropMeunItem?) onChanged;
-  final List<DropdownMenuItem<DropMeunItem>> items;
+  final DropMenuItem value;
+  final void Function(DropMenuItem?) onChanged;
+  final List<DropdownMenuItem<DropMenuItem>> items;
 
   @override
   Widget build(BuildContext context) {

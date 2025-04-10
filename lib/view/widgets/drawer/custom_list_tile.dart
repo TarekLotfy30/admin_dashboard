@@ -30,10 +30,10 @@ class _CustomListTileState extends State<CustomListTile> {
             color: isHovered ? AppColors.primary : null,
             fontWeight: isHovered ? FontWeight.w700 : null,
           ),
-          softWrap: true,
         ),
         leading: SvgPicture.asset(widget.item.iconAsset),
         onTap: widget.item.onTap,
+        horizontalTitleGap: 16,
         trailing: Container(
           width: 3.5,
           decoration: BoxDecoration(

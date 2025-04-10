@@ -6,14 +6,17 @@ class CustomCircleAvatar extends StatelessWidget {
     super.key,
     required this.imagePath,
     required this.backgroundColor,
+    this.radius,
   });
 
   final String imagePath;
   final Color backgroundColor;
+  final double? radius;
 
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
+      radius: radius,
       backgroundColor: backgroundColor,
       child: SvgPicture.asset(
         imagePath,

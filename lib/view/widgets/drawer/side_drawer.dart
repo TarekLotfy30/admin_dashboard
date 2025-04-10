@@ -6,7 +6,6 @@ import '../../components/custom_user_info_list_tile.dart';
 import 'bottom_navigation_item_section.dart';
 import 'upper_navigation_item_section.dart';
 
-
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 
@@ -21,7 +20,7 @@ class CustomDrawer extends StatelessWidget {
               userInfo: UsersInfo.usersInfoList[0],
             ),
           ),
-          const SliverToBoxAdapter(child: UpperNavigationItemsSection()),
+          const UpperNavigationItemsSection(),
           const SliverFillRemaining(
             hasScrollBody: false,
             child: Column(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/app_colors.dart';
 import 'all_expenses_and_quick_invoice/all_expenses_and_quick_invoice.dart';
 import 'drawer/side_drawer.dart';
 
@@ -10,10 +9,9 @@ class DashboardDesktopLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: AppColors.lightGray,
       body: Row(
         children: [
-          Expanded(
+          Flexible(
             flex: 2,
             child: CustomDrawer(),
           ),

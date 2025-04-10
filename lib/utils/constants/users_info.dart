@@ -12,4 +12,37 @@ class UsersInfo {
       photoUrl: Assets.imagesAvatar3,
     ),
   ];
+
+  static final List<UserInfo> usersInfoLatestTransaction = [
+    const UserInfo(
+      name: 'Madrani Andi',
+      email: 'Madraniadi20@gmail',
+      photoUrl: Assets.imagesAvatar1,
+    ),
+    const UserInfo(
+      name: 'Josua Nunito',
+      email: 'Josh Nunito@gmail.com',
+      photoUrl: Assets.imagesAvatar2,
+    ),
+        const UserInfo(
+      name: 'Madrani Andi',
+      email: 'Madraniadi20@gmail',
+      photoUrl: Assets.imagesAvatar1,
+    ),
+    const UserInfo(
+      name: 'Josua Nunito',
+      email: 'Josh Nunito@gmail.com',
+      photoUrl: Assets.imagesAvatar2,
+    ),
+        const UserInfo(
+      name: 'Madrani Andi',
+      email: 'Madraniadi20@gmail',
+      photoUrl: Assets.imagesAvatar1,
+    ),
+    const UserInfo(
+      name: 'Josua Nunito',
+      email: 'Josh Nunito@gmail.com',
+      photoUrl: Assets.imagesAvatar2,
+    ),
+  ];
 }
