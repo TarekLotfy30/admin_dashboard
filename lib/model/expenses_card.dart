@@ -5,10 +5,12 @@ class ExpensesCard {
     required this.title,
     required this.date,
     required this.amount,
+    required this.onTap,
   });
   final int id;
   final String iconData;
   final String title;
   final String date;
   final String amount;
+  final void Function() onTap;
 }

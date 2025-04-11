@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../../utils/app_colors.dart';
 import '../../../utils/app_fonts.dart';
+import '../../components/custom_card.dart';
+import '../../components/custom_circle_avatar.dart';
 import 'all_expenses/all_expenses_section.dart';
 
 class AllExpensesAndQuickInvoice extends StatelessWidget {
@@ -15,7 +18,7 @@ class AllExpensesAndQuickInvoice extends StatelessWidget {
           const AllExpensesSection(),
           const SizedBox(height: 24),
           // Quick Invoice
-          Flexible(
+          CustomCard(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -23,14 +26,36 @@ class AllExpensesAndQuickInvoice extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'All Expenses',
+                      'Quick Invoice',
                       style: AppFonts.styleSemiBold20(context),
+                    ),
+                    const CustomCircleAvatar(
+                      backgroundColor: AppColors.lightGray,
+                      widget: Icon(
+                        Icons.add,
+                        color: AppColors.primary,
+                      ),
                     ),
                   ],
                 ),
-                const Row(
-                  children: [],
+                const SizedBox(height: 24),
+                Text(
+                  'Latest Transaction',
+                  style: AppFonts.styleMedium16(context),
                 ),
+                // SizedBox(
+                //   height: 72,
+                //   child: ListView.separated(
+                //     //scrollDirection: Axis.horizontal,
+                //     itemBuilder: (context, index) => CustomUserInfoListTile(
+                //       userInfo: UsersInfo.usersInfoLatestTransaction[index],
+                //     ),
+                //     separatorBuilder: (context, index) => const SizedBox(
+                //       width: 12,
+                //     ),
+                //     itemCount: UsersInfo.usersInfoLatestTransaction.length,
+                //   ),
+                // ),
               ],
             ),
           ),

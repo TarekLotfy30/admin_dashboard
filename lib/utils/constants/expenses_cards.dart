@@ -6,26 +6,29 @@ class ExpensesCards {
   ExpensesCards._();
 
   static final List<ExpensesCard> expensesCardsList = [
-    const ExpensesCard(
+    ExpensesCard(
       id: 1,
       iconData: Assets.imagesBalance,
       title: 'Balance',
       date: 'April 2022',
       amount: '20,129',
+      onTap: () {},
     ),
-    const ExpensesCard(
+    ExpensesCard(
       id: 2,
       iconData: Assets.imagesIncome,
       title: 'Income',
       date: 'April 2022',
       amount: '20,129',
+      onTap: () {},
     ),
-    const ExpensesCard(
+    ExpensesCard(
       id: 3,
       iconData: Assets.imagesExpenses,
       title: 'Expenses',
       date: 'April 2022',
       amount: '20,129',
+      onTap: () {},
     ),
   ];
 }

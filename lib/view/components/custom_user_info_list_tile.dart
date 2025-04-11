@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../../model/user_info.dart';
 import '../../utils/app_colors.dart';
@@ -14,7 +15,7 @@ class CustomUserInfoListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
       color: AppColors.lightGray,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
@@ -22,8 +23,8 @@ class CustomUserInfoListTile extends StatelessWidget {
       elevation: 0,
       child: ListTile(
         leading: CustomCircleAvatar(
-          imagePath: userInfo.photoUrl,
           backgroundColor: Colors.transparent,
+          widget: SvgPicture.asset(userInfo.photoUrl),
         ),
         title: Text(
           userInfo.name,
