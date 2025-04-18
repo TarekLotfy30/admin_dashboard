@@ -8,18 +8,15 @@ class UpperNavigationItemsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SliverPadding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-      sliver: SliverList(
-        delegate: SliverChildBuilderDelegate(
-          (context, index) => Padding(
-            padding: const EdgeInsets.only(bottom: 20),
-            child: CustomListTile(
-              item: MenuConstant.mainMenuItems[index],
-            ),
+    return SliverList(
+      delegate: SliverChildBuilderDelegate(
+        (context, index) => Padding(
+          padding: const EdgeInsets.only(bottom: 20, left: 20),
+          child: CustomListTile(
+            item: MenuConstant.mainMenuItems[index],
           ),
-          childCount: MenuConstant.mainMenuItems.length,
         ),
+        childCount: MenuConstant.mainMenuItems.length,
       ),
     );
   }

@@ -5,7 +5,7 @@ class CustomCircleAvatar extends StatelessWidget {
     super.key,
     required this.widget,
     required this.backgroundColor,
-    this.radius = 30,
+    this.radius = 25,
   });
 
   final Widget widget;

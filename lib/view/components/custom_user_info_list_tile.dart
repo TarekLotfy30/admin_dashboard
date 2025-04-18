@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../model/user_info.dart';
-import '../../utils/app_colors.dart';
+import '../../utils/colors/app_colors.dart';
 
-import '../../utils/app_fonts.dart';
+import '../../utils/styles/app_fonts.dart';
 import 'custom_circle_avatar.dart';
 
 class CustomUserInfoListTile extends StatelessWidget {
@@ -15,7 +15,6 @@ class CustomUserInfoListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
       color: AppColors.lightGray,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),

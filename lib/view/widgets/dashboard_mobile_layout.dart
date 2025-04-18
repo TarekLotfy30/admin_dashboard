@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/app_colors.dart';
+import '../../utils/colors/app_colors.dart';
 import 'drawer/side_drawer.dart';
 
 class DashboardMobileLayout extends StatelessWidget {

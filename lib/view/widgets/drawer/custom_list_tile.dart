@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../model/menu_item.dart';
-import '../../../utils/app_colors.dart';
-import '../../../utils/app_fonts.dart';
+import '../../../utils/colors/app_colors.dart';
+import '../../../utils/styles/app_fonts.dart';
 
 class CustomListTile extends StatefulWidget {
   const CustomListTile({super.key, required this.item});

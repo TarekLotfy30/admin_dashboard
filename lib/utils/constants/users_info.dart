@@ -1,6 +1,5 @@
 import '../../model/user_info.dart';
-
-import '../app_images.dart';
+import '../images/app_images.dart';
 
 class UsersInfo {
   UsersInfo._();
@@ -24,7 +23,7 @@ class UsersInfo {
       email: 'Josh Nunito@gmail.com',
       photoUrl: Assets.imagesAvatar2,
     ),
-        const UserInfo(
+    const UserInfo(
       name: 'Madrani Andi',
       email: 'Madraniadi20@gmail',
       photoUrl: Assets.imagesAvatar1,
@@ -34,7 +33,7 @@ class UsersInfo {
       email: 'Josh Nunito@gmail.com',
       photoUrl: Assets.imagesAvatar2,
     ),
-        const UserInfo(
+    const UserInfo(
       name: 'Madrani Andi',
       email: 'Madraniadi20@gmail',
       photoUrl: Assets.imagesAvatar1,
@@ -42,7 +41,7 @@ class UsersInfo {
     const UserInfo(
       name: 'Josua Nunito',
       email: 'Josh Nunito@gmail.com',
-      photoUrl: Assets.imagesAvatar2,
+      photoUrl: Assets.imagesAvatar3,
     ),
   ];
 }

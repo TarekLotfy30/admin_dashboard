@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/app_colors.dart';
+import '../../../utils/colors/app_colors.dart';
 import '../../../utils/constants/users_info.dart';
 import '../../components/custom_user_info_list_tile.dart';
 import 'bottom_navigation_item_section.dart';
@@ -16,8 +16,11 @@ class CustomDrawer extends StatelessWidget {
       child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
-            child: CustomUserInfoListTile(
-              userInfo: UsersInfo.usersInfoList[0],
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+              child: CustomUserInfoListTile(
+                userInfo: UsersInfo.usersInfoList[0],
+              ),
             ),
           ),
           const UpperNavigationItemsSection(),
@@ -25,7 +28,7 @@ class CustomDrawer extends StatelessWidget {
             hasScrollBody: false,
             child: Column(
               children: [
-                Spacer(),
+                Expanded(child: SizedBox()),
                 BottomNavigationItemsSection(),
               ],
             ),

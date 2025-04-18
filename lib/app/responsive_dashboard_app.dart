@@ -1,13 +1,14 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/app_colors.dart';
+import '../utils/colors/app_colors.dart';
 import '../view/widgets/dashboard_view.dart';
 
 class ResponsiveDashboardApp extends StatelessWidget {
   const ResponsiveDashboardApp({super.key});
 
   @override
+
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,

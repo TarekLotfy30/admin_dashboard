@@ -1,5 +1,5 @@
 import '../../model/menu_item.dart';
-import '../app_images.dart';
+import '../images/app_images.dart';
 
 class MenuConstant {
   MenuConstant._();

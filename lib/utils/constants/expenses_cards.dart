@@ -1,6 +1,6 @@
 import '../../model/expenses_card.dart';
 
-import '../app_images.dart';
+import '../images/app_images.dart';
 
 class ExpensesCards {
   ExpensesCards._();

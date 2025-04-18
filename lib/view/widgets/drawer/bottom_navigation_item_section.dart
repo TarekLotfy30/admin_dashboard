@@ -8,20 +8,13 @@ class BottomNavigationItemsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(
-        left: 20,
-        right: 20,
-        bottom: 10,
-      ),
-      child: Column(
-        spacing: 20,
-        children: MenuConstant.bottomMenuItems
-            .map(
-              (item) => CustomListTile(item: item),
-            )
-            .toList(),
-      ),
+    return Column(
+      spacing: 20,
+      children: MenuConstant.bottomMenuItems
+          .map(
+            (item) => CustomListTile(item: item),
+          )
+          .toList(),
     );
   }
 }

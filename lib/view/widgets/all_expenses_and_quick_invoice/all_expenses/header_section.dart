@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../model/drop_menu_item.dart';
-import '../../../../utils/app_fonts.dart';
+import '../../../../utils/styles/app_fonts.dart';
 import '../../../../utils/constants/drop_down_menus.dart';
 import '../../../components/custom_drop_down_menu.dart';
 

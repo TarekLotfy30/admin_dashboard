@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
+import '../colors/app_colors.dart';
+
 class AppFonts {
   AppFonts._();
   static TextStyle styleRegular16(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFF064061),
+      color: AppColors.darkBlueGreen,
       fontSize: getResponsiveFontSize(context, fontSize: 16),
       fontWeight: FontWeight.w400,
     );
@@ -12,7 +14,7 @@ class AppFonts {
 
   static TextStyle styleBold16(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFF4EB7F2),
+      color: AppColors.primary,
       fontSize: getResponsiveFontSize(context, fontSize: 16),
       fontWeight: FontWeight.w700,
     );
@@ -20,7 +22,7 @@ class AppFonts {
 
   static TextStyle styleMedium16(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFF064061),
+      color: AppColors.darkBlueGreen,
       fontSize: getResponsiveFontSize(context, fontSize: 16),
       fontWeight: FontWeight.w500,
     );
@@ -28,7 +30,7 @@ class AppFonts {
 
   static TextStyle styleMedium20(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFFFFFFFF),
+      color: AppColors.white,
       fontSize: getResponsiveFontSize(context, fontSize: 20),
       fontWeight: FontWeight.w500,
     );
@@ -36,7 +38,7 @@ class AppFonts {
 
   static TextStyle styleSemiBold16(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFF064061),
+      color: AppColors.darkBlueGreen,
       fontSize: getResponsiveFontSize(context, fontSize: 16),
       fontWeight: FontWeight.w600,
     );
@@ -44,7 +46,7 @@ class AppFonts {
 
   static TextStyle styleSemiBold20(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFF064061),
+      color: AppColors.darkBlueGreen,
       fontSize: getResponsiveFontSize(context, fontSize: 20),
       fontWeight: FontWeight.w600,
     );
@@ -52,7 +54,7 @@ class AppFonts {
 
   static TextStyle styleRegular12(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFFAAAAAA),
+      color: AppColors.mediumGray,
       fontSize: getResponsiveFontSize(context, fontSize: 12),
       fontWeight: FontWeight.w400,
     );
@@ -60,7 +62,7 @@ class AppFonts {
 
   static TextStyle styleSemiBold24(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFF4EB7F2),
+      color: AppColors.primary,
       fontSize: getResponsiveFontSize(context, fontSize: 24),
       fontWeight: FontWeight.w600,
     );
@@ -68,7 +70,7 @@ class AppFonts {
 
   static TextStyle styleRegular14(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFFAAAAAA),
+      color: AppColors.mediumGray,
       fontSize: getResponsiveFontSize(context, fontSize: 14),
       fontWeight: FontWeight.w400,
     );
@@ -76,7 +78,7 @@ class AppFonts {
 
   static TextStyle styleSemiBold18(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFFFFFFFF),
+      color: AppColors.white,
       fontSize: getResponsiveFontSize(context, fontSize: 18),
       fontWeight: FontWeight.w600,
     );
