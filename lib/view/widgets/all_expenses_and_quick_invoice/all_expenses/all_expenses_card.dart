@@ -3,8 +3,8 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../../../model/expenses_card.dart';
 import '../../../../utils/colors/app_colors.dart';
-import '../../../../utils/styles/app_fonts.dart';
 import '../../../../utils/images/app_images.dart';
+import '../../../../utils/styles/app_fonts.dart';
 import '../../../components/custom_circle_avatar.dart';
 
 class CustomExpensesCard extends StatefulWidget {
