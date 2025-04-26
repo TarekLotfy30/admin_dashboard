@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../utils/constants/expenses_cards.dart';
+import '../../../../utils/constants/constants.dart';
 import 'all_expenses_card.dart';
 
 class BuildExpensesCards extends StatelessWidget {
@@ -12,7 +12,7 @@ class BuildExpensesCards extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       spacing: 15,
-      children: ExpensesCards.expensesCardsList
+      children: Constants.expensesCardsList
           .map(
             (card) => Expanded(
               child: CustomExpensesCard(

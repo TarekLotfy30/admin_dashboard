@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/constants/menu_constants.dart';
+import '../../../utils/constants/constants.dart';
 import 'custom_list_tile.dart';
 
 class BottomNavigationItemsSection extends StatelessWidget {
@@ -8,13 +8,20 @@ class BottomNavigationItemsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      spacing: 20,
-      children: MenuConstant.bottomMenuItems
-          .map(
-            (item) => CustomListTile(item: item),
-          )
-          .toList(),
+    return Padding(
+      padding: const EdgeInsets.only(
+        left: 20,
+        right: 20,
+        bottom: 20,
+      ),
+      child: Column(
+        spacing: 20,
+        children: Constants.bottomMenuItems
+            .map(
+              (item) => CustomListTile(item: item),
+            )
+            .toList(),
+      ),
     );
   }
 }

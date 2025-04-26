@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/constants/menu_constants.dart';
+import '../../../utils/constants/constants.dart';
 import 'custom_list_tile.dart';
 
 class UpperNavigationItemsSection extends StatelessWidget {
@@ -11,12 +11,12 @@ class UpperNavigationItemsSection extends StatelessWidget {
     return SliverList(
       delegate: SliverChildBuilderDelegate(
         (context, index) => Padding(
-          padding: const EdgeInsets.only(bottom: 20, left: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: CustomListTile(
-            item: MenuConstant.mainMenuItems[index],
+            item: Constants.mainMenuItems[index],
           ),
         ),
-        childCount: MenuConstant.mainMenuItems.length,
+        childCount: Constants.mainMenuItems.length,
       ),
     );
   }

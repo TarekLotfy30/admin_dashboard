@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'adaptive_layout/adaptive_layout_widget.dart';
+import '../../utils/colors/app_colors.dart';
+import '../../utils/responsive/adaptive_layout_widget.dart';
+import '../../utils/responsive/size_config.dart';
 import 'dashboard_desktop_layout.dart';
 import 'dashboard_mobile_layout.dart';
-
 import 'drawer/side_drawer.dart';
 
 class DashboardView extends StatelessWidget {
@@ -11,15 +12,17 @@ class DashboardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig.init(context);
     return Scaffold(
-      appBar: MediaQuery.sizeOf(context).width < 600
+      backgroundColor: AppColors.lightGray,
+      appBar: SizeConfig.width < SizeConfig.tablet
           ? AppBar(
               title: const Text(
                 'Dashboard',
               ),
             )
           : null,
-      drawer: MediaQuery.sizeOf(context).width < 600 ? const CustomDrawer() : null,
+      drawer: SizeConfig.width < SizeConfig.tablet ? const CustomDrawer() : null,
       body: SafeArea(
         child: AdaptiveLayout(
           mobileBuilder: (context) => const DashboardMobileLayout(),

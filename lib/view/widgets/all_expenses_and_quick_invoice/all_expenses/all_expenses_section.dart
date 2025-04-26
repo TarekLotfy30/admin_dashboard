@@ -14,6 +14,7 @@ class AllExpensesSection extends StatelessWidget {
     return const CustomCard(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           HeaderSection(),
           SizedBox(height: 16),

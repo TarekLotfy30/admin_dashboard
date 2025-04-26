@@ -74,7 +74,7 @@ class _CustomExpensesCardState extends State<CustomExpensesCard> {
                       )
                     : AppFonts.styleRegular14(context),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 16),
               Text(
                 '\$ ${widget.expensesCard.amount}',
                 style: isHovered
