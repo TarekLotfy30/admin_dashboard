@@ -9,22 +9,24 @@ class ItemDetails extends StatelessWidget {
   final ItemDetailsModel itemDetailsModel;
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: Container(
-        width: 12,
-        height: 12,
-        decoration: ShapeDecoration(
-          color: itemDetailsModel.color,
-          shape: const OvalBorder(),
+    return Expanded(
+      child: ListTile(
+        leading: Container(
+          width: 12,
+          height: 12,
+          decoration: ShapeDecoration(
+            color: itemDetailsModel.color,
+            shape: const OvalBorder(),
+          ),
         ),
-      ),
-      title: Text(
-        itemDetailsModel.title,
-        style: AppFonts.styleRegular16(context),
-      ),
-      trailing: Text(
-        itemDetailsModel.value,
-        style: AppFonts.styleMedium16(context),
+        title: Text(
+          itemDetailsModel.title,
+          style: AppFonts.styleRegular16(context),
+        ),
+        trailing: Text(
+          itemDetailsModel.value,
+          style: AppFonts.styleMedium16(context),
+        ),
       ),
     );
   }

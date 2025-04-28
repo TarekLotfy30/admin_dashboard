@@ -15,9 +15,9 @@ class QuickInvoiceSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return const CustomCard(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           QuickInvoiceHeader(),
+          SizedBox(height: 8),
           LatestTransactionsSection(),
           CustomDivider(),
           CustomerInfoFields(),

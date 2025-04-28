@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../colors/app_colors.dart';
+import '../responsive/size_config.dart';
 
 class AppFonts {
   AppFonts._();
@@ -95,11 +96,16 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
 
 double getScaleFactor(BuildContext context) {
   final double width = MediaQuery.sizeOf(context).width;
-  if (width < 600) {
+  if (width < SizeConfig.tablet) {
     return width / 400; // Small screens (e.g., mobile phones)
-  } else if (width < 900) {
-    return width / 600; //(700) // Medium screens (e.g., tablets)
+  } else if (width < SizeConfig.desktop) {
+    return width / 700; //(700) // Medium screens (e.g., tablets)
   } else {
-    return width / 900; //(1000) // Large screens (e.g., desktops)
+    return width / 1920; //(1000) // Large screens (e.g., desktops)
   }
 }
+
+
+//SizeConfig.desktop = 1405
+//SizeConfig.desktop = 813
+

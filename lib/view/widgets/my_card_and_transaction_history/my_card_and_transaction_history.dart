@@ -9,8 +9,6 @@ import 'transaction_history_section.dart';
 class MyCardAndTransactionHistory extends StatelessWidget {
   const MyCardAndTransactionHistory({super.key});
 
-
-
   @override
   Widget build(BuildContext context) {
     return CustomCard(

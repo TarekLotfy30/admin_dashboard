@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../components/custom_card.dart';
-import 'detailed_income_chart.dart';
-import 'income_details.dart';
+import '../../components/custom_divider.dart';
+import 'income_details_and_chart_section.dart';
 import 'income_header.dart';
+import 'see_details_button.dart';
 
 class IncomeSection extends StatelessWidget {
   const IncomeSection({super.key});
@@ -12,18 +13,12 @@ class IncomeSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return const CustomCard(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           IncomeHeader(),
           SizedBox(height: 20),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Expanded(child: DetailedIncomeChart()),
-              Expanded(flex: 2, child: IncomeDetails()),
-            ],
-          ),
+          IncomeDetailsAndChartSection(),
+          CustomDivider(),
+          SeeDetailsButton(),
         ],
       ),
     );

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'size_config.dart';
+
 class AdaptiveLayout extends StatelessWidget {
   /// Creates an adaptive layout widget that switches between mobile, tablet,
-  ///  and desktop layouts
+  /// and desktop layouts
   /// based on the available screen width.
   ///
   /// [mobileBuilder], [tabletBuilder], and [desktopBuilder] are functions
@@ -22,9 +24,9 @@ class AdaptiveLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < 800) {
+        if (constraints.maxWidth < SizeConfig.tablet) {
           return mobileBuilder(context);
-        } else if (constraints.maxWidth < 1200) {
+        } else if (constraints.maxWidth < SizeConfig.desktop) {
           return tabletBuilder(context);
         } else {
           return desktopBuilder(context);
@@ -33,11 +35,3 @@ class AdaptiveLayout extends StatelessWidget {
     );
   }
 }
-
-//USAGE EXAMPLE
-
-/*AdaptiveLayout(
-mobileBuilder: (context) => const MobileLayout(),
-tabletBuilder: (context) => const TabletLayout(),
-desktopBuilder: (context) => const DesktopLayout(),
-);*/

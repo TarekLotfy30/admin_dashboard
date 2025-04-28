@@ -8,16 +8,14 @@ class TransactionList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      // Approximate height per item
-      height: Constants.transactionsHistoryList.length * 95,
-      child: ListView.builder(
-        physics: const NeverScrollableScrollPhysics(),
-        itemBuilder: (context, index) => TransactionItem(
-          transactionHistoryItem: Constants.transactionsHistoryList[index],
-        ),
-        itemCount: Constants.transactionsHistoryList.length,
-      ),
+    return Column(
+      children: Constants.transactionsHistoryList
+          .map(
+            (e) => TransactionItem(
+              transactionHistoryItem: e,
+            ),
+          )
+          .toList(),
     );
   }
 }

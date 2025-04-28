@@ -40,48 +40,67 @@ class _CustomExpensesCardState extends State<CustomExpensesCard> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CustomCircleAvatar(
-                    backgroundColor: isHovered ? const Color(0xff5FBEF3) : AppColors.lightGray,
-                    widget: SvgPicture.asset(
-                      widget.expensesCard.iconData,
+                  Flexible(
+                    child: CustomCircleAvatar(
+                      backgroundColor: isHovered ? const Color(0xff5FBEF3) : AppColors.lightGray,
+                      widget: Center(
+                        child: SvgPicture.asset(
+                          widget.expensesCard.iconData,
+                          colorFilter: ColorFilter.mode(
+                            isHovered ? AppColors.white : AppColors.primary,
+                            BlendMode.srcIn,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    child: SvgPicture.asset(
+                      Assets.arrowRight,
+                      fit: BoxFit.scaleDown,
                       colorFilter: ColorFilter.mode(
-                        isHovered ? AppColors.white : AppColors.primary,
+                        isHovered ? AppColors.white : Colors.black,
                         BlendMode.srcIn,
                       ),
                     ),
                   ),
-                  SvgPicture.asset(
-                    Assets.arrowRight,
-                    fit: BoxFit.cover,
-                  ),
                 ],
               ),
               const SizedBox(height: 34),
-              Text(
-                widget.expensesCard.title,
-                style: isHovered
-                    ? AppFonts.styleSemiBold16(context).copyWith(
-                        color: AppColors.white,
-                      )
-                    : AppFonts.styleSemiBold16(context),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  widget.expensesCard.title,
+                  style: isHovered
+                      ? AppFonts.styleSemiBold16(context).copyWith(
+                          color: AppColors.white,
+                        )
+                      : AppFonts.styleSemiBold16(context),
+                ),
               ),
               const SizedBox(height: 8),
-              Text(
-                widget.expensesCard.date,
-                style: isHovered
-                    ? AppFonts.styleRegular14(context).copyWith(
-                        color: AppColors.white,
-                      )
-                    : AppFonts.styleRegular14(context),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  widget.expensesCard.date,
+                  style: isHovered
+                      ? AppFonts.styleRegular14(context).copyWith(
+                          color: AppColors.white,
+                        )
+                      : AppFonts.styleRegular14(context),
+                ),
               ),
               const SizedBox(height: 16),
-              Text(
-                '\$ ${widget.expensesCard.amount}',
-                style: isHovered
-                    ? AppFonts.styleSemiBold24(context).copyWith(
-                        color: AppColors.white,
-                      )
-                    : AppFonts.styleSemiBold24(context),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  '\$ ${widget.expensesCard.amount}',
+                  style: isHovered
+                      ? AppFonts.styleSemiBold24(context).copyWith(
+                          color: AppColors.white,
+                        )
+                      : AppFonts.styleSemiBold24(context),
+                ),
               ),
             ],
           ),

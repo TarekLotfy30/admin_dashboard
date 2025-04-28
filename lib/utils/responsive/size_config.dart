@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 
-// ignore: avoid_classes_with_only_static_members
 /// Utility class for managing responsive sizes across the app
 ///
 /// This class provides breakpoints and dimension utilities to
 /// enable responsive design throughout the application
 
 class SizeConfig {
+  SizeConfig._();
+
   /// Breakpoint for desktop layouts (in logical pixels)
-  static const double desktop = 1200;
+  static const double desktop = 1405;
 
   /// Breakpoint for tablet layouts (in logical pixels)
-  static const double tablet = 800;
+  static const double tablet = 813;
 
   /// Current screen width (in logical pixels)
   static late double width;
@@ -34,26 +35,3 @@ class SizeConfig {
     width = mediaQuery.width;
   }
 }
-
-
-//  Usage
-// class _DashBoradViewState extends State<DashBoradView> {
-//   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
-//   @override
-//   Widget build(BuildContext context) {
-//     SizeConfig.init(context);
-//     return Scaffold(
-//       key: scaffoldKey,
-//       appBar: MediaQuery.sizeOf(context).width < SizeConfig.tablet
-//           ? AppBar(
-//               elevation: 0,
-//               backgroundColor: const Color(0xFFFAFAFA),
-//               leading: IconButton(
-//                   onPressed: () {
-//                     scaffoldKey.currentState!.openDrawer();
-//                   },
-//                   icon: const Icon(Icons.menu)),
-//             )
-//           : null,
-//       backgroundColor: const Color(0xFFF7F9FA),
-//       drawer: MediaQuery.sizeOf(context).width < SizeConfig.tablet

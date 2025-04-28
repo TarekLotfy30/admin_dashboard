@@ -27,14 +27,18 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
         PieChartSectionData(
           titlePositionPercentageOffset: activeIndex == 0 ? 1.5 : null,
           title: activeIndex == 0 ? 'Design service' : '40%',
-          titleStyle: AppFonts.styleMedium16(context).copyWith(color: activeIndex == 0 ? null : Colors.white),
+          titleStyle: AppFonts.styleMedium16(context).copyWith(
+            color: activeIndex == 0 ? null : Colors.white,
+          ),
           radius: activeIndex == 0 ? 60 : 50,
           value: 40,
           color: const Color(0xFF208BC7),
         ),
         PieChartSectionData(
           titlePositionPercentageOffset: activeIndex == 1 ? 2.2 : null,
-          titleStyle: AppFonts.styleMedium16(context).copyWith(color: activeIndex == 1 ? null : Colors.white),
+          titleStyle: AppFonts.styleMedium16(context).copyWith(
+            color: activeIndex == 1 ? null : Colors.white,
+          ),
           title: activeIndex == 1 ? 'Design product' : '25%',
           value: 25,
           radius: activeIndex == 1 ? 60 : 50,
@@ -42,7 +46,9 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
         ),
         PieChartSectionData(
           titlePositionPercentageOffset: activeIndex == 2 ? 1.4 : null,
-          titleStyle: AppFonts.styleMedium16(context).copyWith(color: activeIndex == 2 ? null : Colors.white),
+          titleStyle: AppFonts.styleMedium16(context).copyWith(
+            color: activeIndex == 2 ? null : Colors.white,
+          ),
           title: activeIndex == 2 ? 'Product royalti' : '20%',
           value: 20,
           radius: activeIndex == 2 ? 60 : 50,
@@ -63,7 +69,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 1,
+      aspectRatio: 120 / 120,
       child: PieChart(getChartData()),
     );
   }

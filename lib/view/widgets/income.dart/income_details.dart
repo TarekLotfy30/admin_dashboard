@@ -22,12 +22,15 @@ class IncomeDetails extends StatelessWidget {
       title: 'Product royalti',
       value: '%20',
     ),
-    ItemDetailsModel(color: Color(0xFFE2DECD), title: 'Other', value: '%22'),
+    ItemDetailsModel(
+      color: Color(0xFFE2DECD),
+      title: 'Other',
+      value: '%22',
+    ),
   ];
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: items.map((e) => ItemDetails(itemDetailsModel: e)).toList(),
     );
   }
