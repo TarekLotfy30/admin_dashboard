@@ -11,29 +11,33 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
-      backgroundColor: AppColors.white,
-      child: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-              child: CustomUserInfoListTile(
-                userInfo: Constants.usersInfoList[0],
+    return SafeArea(
+      bottom: false,
+      child: Drawer(
+        backgroundColor: AppColors.white,
+        child: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
+              child: Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                child: CustomUserInfoListTile(
+                  userInfo: Constants.usersInfoList[0],
+                ),
               ),
             ),
-          ),
-          const UpperNavigationItemsSection(),
-          const SliverFillRemaining(
-            hasScrollBody: false,
-            child: Column(
-              children: [
-                Spacer(),
-                BottomNavigationItemsSection(),
-              ],
+            const UpperNavigationItemsSection(),
+            const SliverFillRemaining(
+              hasScrollBody: false,
+              child: Column(
+                children: [
+                  Spacer(),
+                  BottomNavigationItemsSection(),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

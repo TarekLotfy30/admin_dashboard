@@ -1,10 +1,8 @@
-import '../../model/drop_menu_item.dart';
-import '../../model/expenses_card.dart';
-import '../../model/menu_item.dart';
-import '../../model/transaction_history.dart';
-import '../../model/user_info.dart';
-import '../../model/visa_card.dart';
-import '../images/app_images.dart';
+// Update the Constants file: Remove all the imports from the Constants
+// file and replace them with a single import statement for the imports.dart
+//  file.
+
+import 'imports.dart';
 
 class Constants {
   Constants._();
@@ -144,7 +142,6 @@ class Constants {
     ),
   ];
 
-
   static List<VisaCard> visaCardsList = [
     VisaCard(
       cardNumber: '0918 8124 0042 8129',
@@ -164,5 +161,28 @@ class Constants {
       expiryDate: '1/6',
       cvv: '458',
     ),
-   ];
+  ];
+
+  static List<ItemDetailsModel> itemDetails = [
+    const ItemDetailsModel(
+      color: Color(0xFF208BC7),
+      title: 'Design service',
+      value: '%40',
+    ),
+    const ItemDetailsModel(
+      color: Color(0xFF4DB7F2),
+      title: 'Design product',
+      value: '%25',
+    ),
+    const ItemDetailsModel(
+      color: Color(0xFF064060),
+      title: 'Product royalti',
+      value: '%20',
+    ),
+    const ItemDetailsModel(
+      color: Color(0xFFE2DECD),
+      title: 'Other',
+      value: '%22',
+    ),
+  ];
 }

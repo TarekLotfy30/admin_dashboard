@@ -22,6 +22,7 @@ class DashboardTabletLayout extends StatelessWidget {
                 hasScrollBody: false,
                 child: Column(
                   children: [
+                    SizedBox(height: 40),
                     AllExpensesAndQuickInvoice(),
                     SizedBox(height: 40),
                     MyCardAndTransactionHistory(),
