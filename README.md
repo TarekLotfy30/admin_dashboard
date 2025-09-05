@@ -101,11 +101,11 @@ dev_dependencies:
 
 | Tablet Layout
 --------------------------------|
-<img width="402" height="806" alt="Image" src="https://github.com/user-attachments/assets/8ba55c11-9d5e-4689-9c15-2a5fc7413140" />
+|<img width="1009" height="806" alt="Image" src="https://github.com/user-attachments/assets/2443b37d-c658-46a0-beea-a490c666b0f5" />
 
 | Mobile Layout
 --------------------------------|
-|<img width="1009" height="806" alt="Image" src="https://github.com/user-attachments/assets/2443b37d-c658-46a0-beea-a490c666b0f5" />
+<img width="402" height="806" alt="Image" src="https://github.com/user-attachments/assets/8ba55c11-9d5e-4689-9c15-2a5fc7413140" />
 
 ---
 
