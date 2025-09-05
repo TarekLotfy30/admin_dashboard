@@ -23,12 +23,10 @@ class DashboardView extends StatelessWidget {
       backgroundColor: AppColors.lightGray,
       appBar: width < SizeConfig.tablet ? const CustomAppBar() : null,
       drawer: width < SizeConfig.tablet ? const CustomDrawer() : null,
-      body: SafeArea(
-        child: AdaptiveLayout(
-          mobileBuilder: (context) => const DashboardMobileLayout(),
-          tabletBuilder: (context) => const DashboardTabletLayout(),
-          desktopBuilder: (context) => const DashboardDesktopLayout(),
-        ),
+      body: AdaptiveLayout(
+        mobileBuilder: (context) => const DashboardMobileLayout(),
+        tabletBuilder: (context) => const DashboardTabletLayout(),
+        desktopBuilder: (context) => const DashboardDesktopLayout(),
       ),
     );
   }

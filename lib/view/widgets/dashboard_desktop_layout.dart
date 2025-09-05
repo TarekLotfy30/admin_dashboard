@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'all_expenses_and_quick_invoice/all_expenses_and_quick_invoice.dart';
 import 'drawer/side_drawer.dart';
-import 'income.dart/income_section.dart';
+import 'income/income_section.dart';
 import 'my_card_and_transaction_history/my_card_and_transaction_history.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {

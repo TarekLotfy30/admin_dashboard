@@ -17,7 +17,7 @@ class ActionButtons extends StatelessWidget {
             onPressed: () {},
             buttonText: 'Add more details',
             textColor: AppColors.primary,
-            buttonBackgroundColor: Colors.transparent,
+            buttonBackgroundColor: Colors.white,
           ),
         ),
         const SizedBox(width: 24),

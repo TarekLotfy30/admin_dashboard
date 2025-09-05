@@ -14,9 +14,9 @@ class SeeDetailsButton extends StatelessWidget {
       onPressed: () {},
       buttonText: 'See details',
       textColor: AppColors.primary,
-      buttonBackgroundColor: Colors.transparent,
+      buttonBackgroundColor: Colors.white,
       buttonWidth: double.maxFinite,
-      buttonHeight: 20,
+      buttonHeight: 60,
     );
   }
 }

@@ -39,19 +39,16 @@ class AppButton extends StatelessWidget {
           vertical: 12,
         ),
         backgroundColor: buttonBackgroundColor ?? AppColors.primary,
-        elevation: 0,
+        elevation: 2,
+        //overlayColor: Colors.transparent,
+        textStyle: textStyle ?? AppFonts.styleSemiBold18(context),
+        foregroundColor: textColor ?? AppColors.white,
         minimumSize: Size(buttonWidth ?? double.maxFinite, buttonHeight ?? 62),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(borderRadius ?? 12),
         ),
       ),
-      child: Text(
-        buttonText,
-        style: textStyle ??
-            AppFonts.styleSemiBold18(context).copyWith(
-              color: textColor ?? AppColors.white,
-            ),
-      ),
+      child: Text(buttonText),
     );
   }
 }
