@@ -105,7 +105,7 @@ dev_dependencies:
 
 | Mobile Layout
 --------------------------------|
-<img width="402" height="806" alt="Image" src="https://github.com/user-attachments/assets/8ba55c11-9d5e-4689-9c15-2a5fc7413140" />
+<img width="479" height="962" alt="Image" src="https://github.com/user-attachments/assets/958c9cf9-6f2c-4082-a295-bc48ac72b934" />
 
 ---
 
