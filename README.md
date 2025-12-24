@@ -97,15 +97,15 @@ dev_dependencies:
 
 | Desktop Layout
 --------------------------------|
-| <img width="1856" height="1017" alt="Image" src="https://github.com/user-attachments/assets/10466aa9-6d9b-45a8-aa84-cc8ac2178428" />
+| <img width="1331" height="786" alt="Image" src="https://github.com/user-attachments/assets/86a19ca9-af83-4625-86ee-350a0d0887ea" />
 
 | Tablet Layout
 --------------------------------|
-|<img width="1009" height="806" alt="Image" src="https://github.com/user-attachments/assets/2443b37d-c658-46a0-beea-a490c666b0f5" />
+| <img width="636" height="966" alt="Image" src="https://github.com/user-attachments/assets/77b48e96-2cf9-49e8-985e-9cd590ee9fe7" />
 
 | Mobile Layout
 --------------------------------|
-<img width="479" height="962" alt="Image" src="https://github.com/user-attachments/assets/958c9cf9-6f2c-4082-a295-bc48ac72b934" />
+| <img width="479" height="962" alt="Image" src="https://github.com/user-attachments/assets/958c9cf9-6f2c-4082-a295-bc48ac72b934" />
 
 ---
 
